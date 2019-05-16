@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/css/Login.css" />
+    <script src="~/js/login.js"></script>
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="fadeIn first">
+                <span class="glyphicon glyphicon-user"></span>
+            </div>
+
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="Email" class="fadeIn second" name="login" placeholder="Email">
+                <input type="text" id="Password" class="fadeIn third" name="login" placeholder="password">
+                <input type="button" id="loginbutton" class="fadeIn fourth" value="Log In">
+                <div>
+                    <span class="small" style="color:red">New User?</span>
+                </div>
+                <input type="button" class="fadeIn fourth" value="Register" onclick='window.location = "@Url.Action("Register","Login")"' style="margin-top:10px;">
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+    </script>
+</body>
+</html>
+
